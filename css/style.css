@@ -1,0 +1,55 @@
+/* главный цвет шрифта #212121; */
+/* вторичный цвет фона #757575; */
+/* белый #FFFFFF; */
+/* акцент #2196F3; */
+
+:root {
+  --main-text-color: #212121;
+  --secont-text-color: #757575;
+  --white-text-color: #ffffff;
+  --accent: #2196f3;
+}
+
+body {
+  background-color: #fff;
+  color: var(--main-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+footer {
+  background-color: #2f303a;
+}
+
+/* Оформление кнопок */
+
+.button {
+  color: var(--main-text-color);
+  background-color: #f5f4fa;
+}
+
+.button.primary {
+  color: var(--white-text-color);
+  background-color: var(--accent);
+}
+
+.button:hover {
+  color: var(--white-text-color);
+  background-color: var(--accent);
+}
+
+.link {
+  color: var(--main-text-color);
+}
+.link:hover {
+  color: var(--accent);
+}
+
+.adress {
+  color: var(--secont-text-color);
+}
+.home-adress {
+  color: var(--white-text-color);
+}

@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -12,17 +18,19 @@
     <header>
       <!-- Навигация -->
       <nav>
-        <a href="/">WebStudio</a>
+        <a class="logo" href="studio.html"><span class="accent-blue">Web</span>Studio</a>
         <ul class="list">
-          <li><a class="link" href="">Студия</a></li>
-          <li><a class="link" href="./portfolio.html">Портфолио</a></li>
-          <li><a class="link" href="">Контакты</a></li>
+          <li><a class="link-header" href="./studio.html">Студия</a></li>
+          <li><a class="link-header" href="./portfolio.html">Портфолио</a></li>
+          <li><a class="link-header" href="">Контакты</a></li>
         </ul>
       </nav>
       <!-- Адрес шапки -->
       <ul class="list">
-        <li><a class="adress link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="adress link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li>
+          <a class="adress link-header" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li><a class="adress link-header" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
     </header>
     <!-- Главная информация -->
@@ -104,15 +112,15 @@
       </section>
     </main>
     <!-- Подвал страницы -->
-    <footer>
-      <a href="/">WebStudio</a>
-      <address>
-        <ul class="list">
-          <li><p class="home-adress">г. Киев, пр-т Леси Украинки, 26</p></li>
-          <li><a class="adress" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="adress" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-      </address>
+    <footer class="footer">
+      <a class="logo" href="studio.html"><span class="accent-blue">Web</span>Studio</a>
+      <ul class="list">
+        <li><p class="home-adress">г. Киев, пр-т Леси Украинки, 26</p></li>
+        <li>
+          <a class="adress link-footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li><a class="adress link-footer" href="tel:+380961111111">+38 096 111 11 11</a></li>
+      </ul>
     </footer>
   </body>
 </html>

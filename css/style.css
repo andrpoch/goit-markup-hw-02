@@ -2,90 +2,210 @@
 /* вторичный цвет фона #757575; */
 /* белый #FFFFFF; */
 /* акцент #2196F3; */
+/* фон главной секции студии и футера #2F303A; */
+/* фон секции наша команда и кнопок в портфолио #F5F4FA; */
 
 :root {
   --main-text-color: #212121;
   --secont-text-color: #757575;
   --white-text-color: #ffffff;
   --accent: #2196f3;
+  --background-main-section-studio-and-footer: #2f303a;
+  --background-section-command-and-button-portfolio: #f5f4fa;
 }
 
 body {
-  background-color: #fff;
+  background-color: var(--white-text-color);
   color: var(--main-text-color);
+  font-family: roboto, sans-serif;
 }
 
+/* Логотип */
+.logo {
+  color: var(--main-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.accent-blue {
+  color: var(--accent);
+}
 .list {
   list-style: none;
 }
 
-footer {
-  background-color: #2f303a;
+.footer {
+  background-color: var(--background-main-section-studio-and-footer);
 }
 
 /* Оформление кнопок */
 
 .button {
   color: var(--main-text-color);
-  background-color: #f5f4fa;
-}
-
-.button.primary {
-  color: var(--white-text-color);
-  background-color: var(--accent);
+  background-color: var(--background-section-command-and-button-portfolio);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  cursor: pointer;
 }
 
 .button:hover {
   color: var(--white-text-color);
   background-color: var(--accent);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  cursor: pointer;
 }
 
-.link {
+.button.primary {
+  color: var(--white-text-color);
+  background-color: var(--accent);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+  cursor: pointer;
+}
+/* Ссылки шапки */
+.link-header {
   color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
-.link:hover {
+.link-header:hover {
   color: var(--accent);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
-
-.adress {
-  color: var(--secont-text-color);
+.link-header:focus {
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+/* Ссылки подвала */
+.link-footer {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.link-footer:hover {
+  color: var(--accent);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.link-footer:focus {
+  color: var(--accent);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 .home-adress {
   color: var(--white-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.adress {
+  color: var(--secont-text-color);
 }
 
 /* Главная секция */
+.main-section {
+  background-color: var(--background-main-section-studio-and-footer);
+}
 .main-section-title {
   color: var(--white-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 /* Секция преимущества */
 .benefits-title {
   color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .benefits-text {
   color: var(--secont-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 /* Секция чем мы занимаемся */
 .section-title {
   color: var(--main-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
-
 /* Секция наша команда */
 .command-title {
   color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
 }
 
 .command-text {
   color: var(--secont-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
 }
 
 /* Порфолио */
 /* Секция все */
 .section-all-title {
   color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 .section-all-text {
   color: var(--secont-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+.photo-portfolio a {
+  text-decoration: none;
 }

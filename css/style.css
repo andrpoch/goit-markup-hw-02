@@ -53,4 +53,39 @@ footer {
 .home-adress {
   color: var(--white-text-color);
 }
-.cc
+
+/* Главная секция */
+.main-section-title {
+  color: var(--white-text-color);
+}
+
+/* Секция преимущества */
+.benefits-title {
+  color: var(--main-text-color);
+}
+
+.benefits-text {
+  color: var(--secont-text-color);
+}
+/* Секция чем мы занимаемся */
+.section-title {
+  color: var(--main-text-color);
+}
+
+/* Секция наша команда */
+.command-title {
+  color: var(--main-text-color);
+}
+
+.command-text {
+  color: var(--secont-text-color);
+}
+
+/* Порфолио */
+/* Секция все */
+.section-all-title {
+  color: var(--main-text-color);
+}
+.section-all-text {
+  color: var(--secont-text-color);
+}

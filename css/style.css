@@ -4,6 +4,7 @@
 /* акцент #2196F3; */
 /* фон главной секции студии и футера #2F303A; */
 /* фон секции наша команда и кнопок в портфолио #F5F4FA; */
+/* цвет ссылок футера #rgba(255, 255, 255, 0.6); */
 
 :root {
   --main-text-color: #212121;
@@ -33,6 +34,9 @@ body {
 .accent-blue {
   color: var(--accent);
 }
+.accent-white {
+  color: var(--white-text-color);
+}
 .list {
   list-style: none;
 }
@@ -46,6 +50,7 @@ body {
 .button {
   color: var(--main-text-color);
   background-color: var(--background-section-command-and-button-portfolio);
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -56,6 +61,17 @@ body {
 .button:hover {
   color: var(--white-text-color);
   background-color: var(--accent);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.button:focus {
+  color: var(--white-text-color);
+  background-color: var(--accent);
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -63,9 +79,10 @@ body {
   cursor: pointer;
 }
 
-.button.primary {
+.button-primary {
   color: var(--white-text-color);
   background-color: var(--accent);
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -98,8 +115,17 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+.active {
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
 /* Ссылки подвала */
 .link-footer {
+  color: var(--color-a-footer);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -129,10 +155,13 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-.adress {
+.adress-header {
   color: var(--secont-text-color);
 }
 
+.adress-footer {
+  color: rgba(255, 255, 255, 0.6);
+}
 /* Главная секция */
 .main-section {
   background-color: var(--background-main-section-studio-and-footer);

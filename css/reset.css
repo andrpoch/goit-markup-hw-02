@@ -16,3 +16,6 @@ ol {
 button {
   cursor: pointer;
 }
+img {
+  display: block;
+}

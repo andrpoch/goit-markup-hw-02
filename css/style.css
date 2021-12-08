@@ -37,9 +37,6 @@ body {
 .accent-white {
   color: var(--white-text-color);
 }
-.list {
-  list-style: none;
-}
 
 .footer {
   background-color: var(--background-main-section-studio-and-footer);
@@ -55,7 +52,6 @@ body {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  cursor: pointer;
 }
 
 .button:hover {
@@ -66,7 +62,6 @@ body {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  cursor: pointer;
 }
 .button:focus {
   color: var(--white-text-color);
@@ -76,7 +71,6 @@ body {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  cursor: pointer;
 }
 
 .button-primary {
@@ -88,7 +82,6 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06em;
   text-align: center;
-  cursor: pointer;
 }
 /* Ссылки шапки */
 .link-header {
